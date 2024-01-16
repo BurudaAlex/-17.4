@@ -1,0 +1,207 @@
+2024-01-13 02:09:18,406 ERROR Internal Server Error: / /Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/utils/log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError('<ExtendsNode: extends "main.html"> must be the first tag in the template.'), <traceback object at 0x10f108ec0>)
+Traceback (most recent call last):
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends "main.html"> must be the first tag in the template.
+2024-01-13 02:09:18,449 ERROR "GET / HTTP/1.1" 500 131469 /Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py None
+2024-01-13 02:29:37,268 ERROR Internal Server Error: / /Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/utils/log.py (<class 'KeyError'>, KeyError('Unknown language code jp.'), <traceback object at 0x10f2a85c0>)
+Traceback (most recent call last):
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/utils/translation/__init__.py", line 272, in get_language_info
+    lang_info = LANG_INFO[lang_code]
+                ~~~~~~~~~^^^^^^^^^^^
+KeyError: 'jp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/templatetags/i18n.py", line 50, in render
+    context[self.variable] = [self.get_language_info(lang) for lang in langs]
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/templatetags/i18n.py", line 50, in <listcomp>
+    context[self.variable] = [self.get_language_info(lang) for lang in langs]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/templatetags/i18n.py", line 44, in get_language_info
+    return translation.get_language_info(language[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/utils/translation/__init__.py", line 279, in get_language_info
+    raise KeyError("Unknown language code %s." % lang_code)
+KeyError: 'Unknown language code jp.'
+2024-01-13 02:29:37,290 ERROR "GET / HTTP/1.1" 500 175430 /Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py None
+2024-01-13 02:30:11,093 ERROR Internal Server Error: / /Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/utils/log.py (<class 'KeyError'>, KeyError('Unknown language code jp.'), <traceback object at 0x10f1b1a40>)
+Traceback (most recent call last):
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/utils/translation/__init__.py", line 272, in get_language_info
+    lang_info = LANG_INFO[lang_code]
+                ~~~~~~~~~^^^^^^^^^^^
+KeyError: 'jp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/templatetags/i18n.py", line 50, in render
+    context[self.variable] = [self.get_language_info(lang) for lang in langs]
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/templatetags/i18n.py", line 50, in <listcomp>
+    context[self.variable] = [self.get_language_info(lang) for lang in langs]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/templatetags/i18n.py", line 44, in get_language_info
+    return translation.get_language_info(language[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/utils/translation/__init__.py", line 279, in get_language_info
+    raise KeyError("Unknown language code %s." % lang_code)
+KeyError: 'Unknown language code jp.'
+2024-01-13 02:30:11,110 ERROR "GET / HTTP/1.1" 500 175430 /Users/alex/Desktop/Pycharm/NewPortaltry2/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py None
